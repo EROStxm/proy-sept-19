@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contenedor{
+    background-color: rgb(170, 170, 255);
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
+    grid-template-areas: "header  header  header" 
+                         "nav     nav     nav" 
+                         "section section ads" 
+                         "footer  footer  footer" 
+                         "facebook    rrss    youtube";
+    grid-gap: 10px;
+}
+.contenedor div{
+    background-color: rgb(120, 120, 200);
+}
+.contenedor .header{
+    background-color: rgb(100, 100, 194);
+    grid-column: header;
+}
+.contenedor .nav{
+    background-color: rgb(90, 90, 194);
+    grid-column: nav;
+}
+.contenedor .section{
+    background-color: rgb(80, 80, 194);
+    grid-column: section;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.contenedor .section .contenido1{
+    background-color: rgb(51, 232, 171);
+    display: flex;
+    width: 45%;
+    justify-content: center;
+}
+.contenedor .section .contenido2{
+    background-color: rgb(51, 232, 171);
+    display: flex;
+    width: 45%;
+    justify-content: center;
+}
+.contenedor .ads{
+    background-color: rgb(70, 70, 194);
+    grid-column: ads;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.ads .hijo-publicidad{
+    background-color: aqua;
+    width: 90%;
+}
+.contenedor .footer{
+    background-color: rgb(50, 50, 194);
+    grid-column: footer;
+}
+.contenedor .rrss{
+    background-color: rgb(40, 40, 194);
+    grid-column: rrss;
+}
